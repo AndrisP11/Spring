@@ -1,5 +1,6 @@
-package com.example.springapp;
+package com.example.springapp.FirstApp;
 
+import com.example.springapp.FirstApp.Person;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Random;
@@ -23,7 +24,7 @@ public class FirstController {
     @RequestMapping("/person")
     private Person createPerson() {
         return new Person("John", "Smith", "213455-63634");
-        //Displays Person how it's defined in .toString method in Person class
+        //Displays Person how it's defined with JSON.
     }
 
     @RequestMapping("/count")
